@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 07, 2021 at 08:49 AM
+-- Generation Time: Apr 07, 2021 at 11:02 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -86,6 +86,16 @@ CREATE TABLE `customer_service` (
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `customer_service`
+--
+
+INSERT INTO `customer_service` (`id`, `serviceid`, `firstname`, `lastname`, `bikenumber`, `bikemodal`, `servicedate`, `email`, `avail_service`, `phoneno`, `altphoneno`, `idname`, `idnumber`, `address`, `statusreport`, `created_at`, `updated_at`) VALUES
+(39, '1', 'Ramanathan', 'K', 'TN98Y7898', 'Pulsar', '2021-04-08', 'vkramanathan99@gmail.com', 'Oil Change', 8838027431, 9524848585, 'Aadhaar Card', '1230456978963', 'Tiruppur', 'Pending', '2021-04-07 08:25:02', '2021-04-07 08:25:02'),
+(40, '1', 'Ramanathan', 'K', 'TN98Y7890', 'Pulsar', '2021-04-08', 'vkramanathan99@gmail.com', 'Oil Change', 8838027431, 9524848585, 'Aadhaar Card', '12542859621545245', 'Tiruppur', 'Completed', '2021-04-07 08:30:47', '2021-04-07 08:30:47'),
+(41, '1', 'Karthick', 'R', 'TN09U8970', 'Discover 150', '2021-04-08', 'karthickking2233@gmail.com', 'Water Wash', 6381172834, 0, 'Voter ID', '516511655855', 'Tiruppur', 'Ready For Delivery', '2021-04-07 08:33:10', '2021-04-07 08:33:10'),
+(42, '1', 'Jai Sri Ram', 'M', 'TN89J7890', 'Kawasaki Ninja 300', '2021-04-08', 'jaisriram8072141458@gmail.com', 'General Service Check-Up', 8072141458, 0, 'Aadhaar Card', '42156323451', 'Tiruppur', 'Booked', '2021-04-07 08:37:38', '2021-04-07 08:37:38');
+
 -- --------------------------------------------------------
 
 --
@@ -108,7 +118,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `firstname`, `lastname`, `email`, `password`, `cpassword`, `created_at`, `updated_at`) VALUES
-(1, 'Ramanathan', 'K', 'ramanathan@gmail.com', 'ramanathan', 'ramanathan', '2021-04-04 12:36:33', '2021-04-04 12:36:33'),
+(1, 'Ramanathan', 'K', 'ram@gmail.com', 'ramanathan', 'ramanathan', '2021-04-04 12:36:33', '2021-04-04 12:36:33'),
 (3, 'Karthick', 'R', 'karthick@gmail.com', 'karthick', 'karthick', '2021-04-04 12:37:54', '2021-04-04 12:37:54'),
 (4, 'Karthick', 'R', 'karthick@gmail.com', 'karthick', 'karthick', '2021-04-04 16:09:13', '2021-04-04 16:09:13');
 
@@ -154,7 +164,7 @@ ALTER TABLE `add_service`
 -- AUTO_INCREMENT for table `customer_service`
 --
 ALTER TABLE `customer_service`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `user`

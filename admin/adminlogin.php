@@ -21,7 +21,7 @@
             <div class="box-header with-border">
               <h3 class="box-title">Admin Login</h3>
             </div>
-    <form class="form-horizontal" action="handler/adminlogin.php" method="POST">
+    <form class="form-horizontal" action="handler/adminlogin.php" method="POST" autocomplete="off">
               <div class="box-body">
                 <div class="form-group">
                   <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
